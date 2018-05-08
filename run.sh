@@ -17,7 +17,7 @@ DEPLOYMENT="$1";
 
 case "$DEPLOYMENT" in
 	single-simple)
-		bash "deployment/single-simple/single-simple.sh";
+		bash "development/single-simple/single-simple.sh";
 		;;
 
 	*)
