@@ -6,7 +6,7 @@ cd "$DIR";
 source "../../etc/variables.sh";
 
 bash '../../etc/dependencies/docker.sh';
-bash '../../etc/dependencies/docker.sh-compose';
+bash '../../etc/dependencies/docker-compose.sh';
 bash '../../etc/dependencies/make.sh';
 
 git clone https://github.com/bigchaindb/bigchaindb;
