@@ -11,4 +11,5 @@ bash '../../etc/dependencies/make.sh';
 
 git clone https://github.com/bigchaindb/bigchaindb;
 cd bigchaindb;
-sudo make start;
+docker-compose build bigchaindb;
+docker-compose up -d bdb;
