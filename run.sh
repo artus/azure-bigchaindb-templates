@@ -21,6 +21,11 @@ case "$DEPLOYMENT" in
 		bash "single-simple.sh";
 		;;
 
+	az-single-simple)
+		cd "development/single-simple.sh";
+		bash "az-single-simple.sh $2 $3 $4";
+		;;
+
 	*)
 		echo "No valid deployment specified...";
 		exit 1;
