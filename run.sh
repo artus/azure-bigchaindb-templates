@@ -23,7 +23,7 @@ case "$DEPLOYMENT" in
 
 	az-single-simple)
 		cd "development/single-simple";
-		bash "az-single-simple.sh $2 $3 $4";
+		bash az-single-simple.sh $2 $3 $4;
 		;;
 
 	*)
