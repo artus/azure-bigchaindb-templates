@@ -8,6 +8,9 @@ KEY="52316F86FEE04B979B07E28DB02C46DF417A0893";
 
 if [ "$(check_installed 'az')" == "false" ]; then
 
+    # Install dirmngr
+    sudo apt-get install dirmngr -y;
+
     # Modify source list
     TEST="$(lsb_release -cs)";
     echo "deb [arch=amd64] https://package.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list;
