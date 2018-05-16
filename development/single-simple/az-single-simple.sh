@@ -57,4 +57,10 @@ az vm run-command invoke -g "$GROUP_NAME" -n "$VM_NAME" --command-id RunShellScr
 # Pull this repository on the VM and run a single node.
 # 
 
-az vm run-command invoke -g "$GROUP_NAME" -n "$VM_NAME" --command-id RunShellScript --scripts "git clone https://github.com/artusvranken/azure-bigchaindb-templates.git && cd azure-bigchaindb-templates && bash run.sh single-simple";
+az vm run-command invoke -g "$GROUP_NAME" -n "$VM_NAME" --command-id RunShellScript --scripts "git clone https://github.com/artusvranken/azure-bigchaindb-templates.git && cd azure-bigchaindb-templates && bash run.sh single-simple" --debug --verbose;
+
+#
+# Display IP of VM
+#
+
+az vm list-ip-addresses -g "$GROUP_NAME" -n "$VM_NAME";

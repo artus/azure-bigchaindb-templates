@@ -4,9 +4,11 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 cd "$DIR";
 source "../variables.sh";
 
-KEY="52316F86FEE04B979B07E28DB02C46DF417A0893";
+KEY="52E16F86FEE04B979B07E28DB02C46DF417A0893";
 
 if [ "$(check_installed 'az')" == "false" ]; then
+
+    # https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest
 
     # Install dirmngr
     sudo apt-get install dirmngr -y;
