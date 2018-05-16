@@ -12,7 +12,7 @@ if [ "$(check_installed 'az')" == "false" ]; then
     sudo apt-get install dirmngr -y;
 
     # Modify source list
-    TEST="$(lsb_release -cs)";
+    AZ_REPO=$(lsb_release -cs);
     echo "deb [arch=amd64] https://package.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list;
 
     # Get the microsoft signing key (deprecated but still runs)
