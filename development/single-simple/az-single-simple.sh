@@ -39,7 +39,7 @@ bash "../../etc/dependencies/azure-cli.sh";
 #
 
 az group create --name "$GROUP_NAME" --location "$LOCATION";
-az vm create --resource-group "$GROUP_NAME" --name "$VM_NAME" --image UbuntuLTS --admin-username "admin" --generate-ssh-keys;
+az vm create --resource-group "$GROUP_NAME" --name "$VM_NAME" --image UbuntuLTS --admin-username "bigchaindbuser" --generate-ssh-keys;
 
 #
 # Open BigchainDB port.
