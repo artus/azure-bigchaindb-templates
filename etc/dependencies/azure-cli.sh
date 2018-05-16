@@ -6,7 +6,7 @@ source "../variables.sh";
 
 KEY="52316F86FEE04B979B07E28DB02C46DF417A0893";
 
-if [ "$(check_installed 'az')" == "false"]; then
+if [ "$(check_installed 'az')" == "false" ]; then
 
     # Modify source list
     TEST="$(lsb_release -cs)";
@@ -27,6 +27,6 @@ if [ "$(check_installed 'az')" == "false"]; then
 
 fi;
 
-if [ "$(check_azure_login)" == "false"]; then
+if [ "$(check_azure_login)" == "false" ]; then
     az login;
 fi;

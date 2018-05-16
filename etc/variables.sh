@@ -17,7 +17,7 @@ function check_installed {
 }
 
 function check_azure_login {
-	if [ $(az account show | wc -l) -eq 0]; then
+	if [ $(az account show | wc -l) -eq 0 ]; then
 		echo "false";
 	else
 		echo "true";
