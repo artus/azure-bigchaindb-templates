@@ -13,7 +13,7 @@ if [ "$(check_installed 'az')" == "false" ]; then
 
     # Modify source list
     AZ_REPO=$(lsb_release -cs);
-    echo "deb [arch=amd64] https://package.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list;
+    echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list;
 
     # Get the microsoft signing key (deprecated but still runs)
     sudo apt-key adv --keyserver packages.microsoft.com --recv-keys "$KEY";
