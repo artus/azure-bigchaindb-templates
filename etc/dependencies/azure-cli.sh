@@ -26,3 +26,7 @@ if [ "$(check_installed 'az')" == "false"]; then
     az login;
 
 fi;
+
+if [ "$(check_azure_login)" == "false"]; then
+    az login;
+fi;
